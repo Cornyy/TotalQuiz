@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/QuestionFieldBackground"
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/common_google_signin_btn_text_light_normal_background"
+        android:contentDescription="@string/questionfield" />
+
+    <TextView
+        android:id="@+id/QuestionField"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="19dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/goodOrFalseField"
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:gravity="center"
+        android:layout_below="@+id/QuestionField"
+        android:textSize="40sp"
+        android:visibility="invisible"/>
+
+    <Button
+    android:id="@+id/buttonFirstAnswer"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+    android:layout_below="@+id/QuestionFieldBackground"
+    android:layout_marginTop="80dp"
+    android:layout_marginStart="25dp"
+        android:background="@drawable/main_activity_buttons"
+        android:textColor="#000000"
+        android:onClick="buttonCheckAnswerOnClick"/>
+    <Button
+        android:id="@+id/buttonSecondAnswer"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/QuestionFieldBackground"
+        android:layout_marginTop="80dp"
+        android:layout_alignLeft="@+id/buttonFirstAnswer"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/main_activity_buttons"
+        android:textColor="#000000"
+        android:onClick="buttonCheckAnswerOnClick"/>
+    <Button
+        android:id="@+id/buttonThirdAnswer"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/buttonFirstAnswer"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/main_activity_buttons"
+        android:textColor="#000000"
+        android:onClick="buttonCheckAnswerOnClick"/>
+    <Button
+        android:id="@+id/buttonFourthAnswer"
+        android:layout_width="165dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/buttonSecondAnswer"
+        android:layout_marginTop="20dp"
+        android:layout_alignLeft="@+id/buttonThirdAnswer"
+        android:layout_marginLeft="190dp"
+        android:background="@drawable/main_activity_buttons"
+        android:textColor="#000000"
+        android:onClick="buttonCheckAnswerOnClick"/>
+
+    <Button
+        android:id="@+id/buttonBackFromGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonFourthAnswer"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/main_activity_buttons"
+        android:textColor="#000000"
+        android:text="@string/buttonPowrot"
+        android:textSize="30sp"
+        android:onClick="buttonBackFromGameOnClick"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

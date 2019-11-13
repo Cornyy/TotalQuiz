@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">TotalQuiz</string>
+    <string name="buttonZaloguj">Zaloguj</string>
+    <string name="buttonZarejestruj">Zarejestruj</string>
+    <string name="email">E-mail</string>
+    <string name="password">Hasło</string>
+    <string name="WithoutAccount">Nie masz konta? Zarejestruj się!</string>
+    <string name="buttonStart">Start</string>
+    <string name="buttonWyloguj">Wyloguj</string>
+    <string name="buttonPowrot">Powrót</string>
+    <string name="logo">logo</string>
+    <string name="buttonSport">Sport</string>
+    <string name="buttonMuzyka">Muzyka</string>
+    <string name="questionfield">QuestionField</string>
+</resources>
